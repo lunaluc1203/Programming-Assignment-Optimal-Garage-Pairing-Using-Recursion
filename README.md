@@ -1,66 +1,85 @@
 Optimal Garage Pairing Using Recursion
 
-A C program that computes the minimum total distance required to connect garages using expressways. This project emphasizes recursive optimization and demonstrates how AI tools were used to improve performance for larger inputs.
+Language: C
+Course: COP 3502C – Computer Science I
+Focus: Recursion, Optimization, AI-Assisted Problem Solving
 
-Project Overview
+Overview
 
-Given the coordinates of 2n garages, the program pairs them into n expressways such that each garage is used exactly once and the total distance is minimized. The solution explores all valid pairings using a recursive permutation approach.
+This project computes the minimum total distance required to connect garages using expressways. Given the coordinates of 2n garages, the program pairs them so that each garage is used exactly once while minimizing the overall distance.
+
+The solution explores all valid pairings using recursive permutations and applies AI-assisted optimization to improve performance for larger inputs.
 
 AI-Assisted Optimization
 
-This assignment required the use of AI tools to optimize the program for higher values of n.
+This assignment explicitly required the use of AI tools (ChatGPT) to optimize the program.
 
-The initial implementation worked correctly for smaller inputs. AI assistance (ChatGPT) was used to identify performance bottlenecks and introduce early pruning, allowing the recursion to terminate branches when partial distances exceeded the current best solution. This significantly improved runtime while preserving the required recursive structure.
+Initial solution worked correctly for small inputs (n ≤ 5)
+
+AI assistance was used to analyze performance bottlenecks
+
+ChatGPT helped introduce early pruning, terminating recursive branches when partial distances exceeded the current best solution
+
+Optimization preserved the required recursive and permutation-based structure
+
+This demonstrates responsible and effective use of AI to improve algorithm efficiency while maintaining correctness.
 
 Key Features
 
 Recursive permutation generation using a used[] array
 
-Early pruning to reduce unnecessary recursion
+Early pruning to drastically reduce the search space
 
 Euclidean distance calculations between garage coordinates
 
-Deterministic and precisely formatted output
+Deterministic output with strict formatting requirements
 
-Improved performance for larger input sizes
+Improved runtime performance for larger values of n
 
 Technical Skills Demonstrated
 
 C Programming
 
-Recursion and Backtracking
+Recursion & Backtracking
 
 Permutation Algorithms
 
 Algorithm Optimization
 
-AI-Assisted Problem Solving
+AI-Assisted Development
 
 Dynamic Memory Management
 
-Floating-Point Precision Handling
+Floating-Point Precision
 
 Algorithm Summary
 
-The program recursively generates permutations of garage indices, forms garage pairs sequentially, accumulates distances as pairs are created, and prunes branches early when they exceed the best known distance. The optimal pairing is stored and printed.
+Recursively generate permutations of garage indices
+
+Pair garages sequentially from the permutation
+
+Accumulate distances as each pair is formed
+
+Prune recursion when partial distance exceeds the best known solution
+
+Store and output the optimal pairing
 
 Constraints
 
-No file input/output
+No file I/O (stdin/stdout only)
 
 Recursive solution required
 
-Permutation with used-array technique enforced
+Must use permutation + used-array technique
 
 Limited global variables
 
 Exact output formatting required
 
-Build and Run
-
+Build & Run
 gcc main.c -Wno-unused-result -lm
 ./a.out
 
 Outcome
 
-The final solution efficiently computes the minimum expressway distance and demonstrates effective use of AI to optimize a recursive algorithm under strict academic constraints.
+The final solution efficiently computes the optimal garage pairing and showcases how AI-assisted optimization can significantly improve the performance of recursive algorithms under strict academic constraints.
